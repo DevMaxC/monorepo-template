@@ -4,12 +4,24 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,json,md}\"",
+    "lint": "eslint \"packages/*/src/**/*.{js,ts,tsx}\" \"sst.config.ts\"",
+    "lint:fix": "eslint \"packages/*/src/**/*.{js,ts,tsx}\" \"sst.config.ts\" --fix"
+  },
   "devDependencies": {
     "@tsconfig/node22": "^22",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.5.3",
     "typescript": "^5"
   },
   "dependencies": {
-    "sst": "^3"
+    "@aws-sdk/client-s3": "^3.777.0",
+    "sst": "^3.11.11"
   }
 }

@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build directories
+dist/
+build/
+.build/
+.sst/
+.open-next/
+cdk.out/
+.next/
+
+# Generated files
+**/*.js.map
+**/*.d.ts
+
+# Package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Coverage
+coverage/
+
+# Compiled assets and minified files
+**/_next/static/chunks/
+**/.open-next/assets/
+**/.open-next/server-functions/
+**/server-functions/
+**/static/chunks/
+
+# Environment files
+.env
+.env.* 

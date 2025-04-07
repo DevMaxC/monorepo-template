@@ -1,0 +1,22 @@
+# Build artifacts
+dist/
+build/
+coverage/
+.sst/
+
+# Node modules
+node_modules/
+
+# Package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db 
