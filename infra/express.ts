@@ -5,7 +5,7 @@ const twilioAccountSid = new sst.Secret('TwilioSID');
 const twilioAuthToken = new sst.Secret('TwilioAuthToken');
 const twilioPhoneNumber = new sst.Secret('TwilioPhoneNumber');
 
-export const domainName = 'maxchur.ch';
+export const domainName = 'yourdomain.com';
 
 const cluster = new sst.aws.Cluster('MyCluster', { vpc });
 
